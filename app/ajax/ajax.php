@@ -5,7 +5,7 @@ switch ($_REQUEST['action']) {
             $body = '';
 
             // conneicon bd 
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_2022', 'root', 'root');
 
 
             $sql = "SELECT compopartie.* , equipe.nom from  compopartie inner join partie on partie_id = partie.id inner join equipe on equipe_id = equipe.id where partie_id=1 order by scoreActuel desc;";
@@ -35,7 +35,7 @@ switch ($_REQUEST['action']) {
 
     case 'testFlag': {
             $flag = $_REQUEST['flag'];
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_2022', 'root', 'root');
             $sql = "SELECT * from enigme where flag='$flag';";
             $res = $pdo->query($sql);
             $lignes = $res->fetchAll();
@@ -51,7 +51,7 @@ switch ($_REQUEST['action']) {
             $id = $_POST['idEnigme'];
             $idEquipe = $_POST['idEquipe'];
             // $equipe = $_request['equipe'];
-            $pdo = new PDO('mysql:host=localhost;dbname=hackathon', 'root', '');
+            $pdo = new PDO('mysql:host=localhost;dbname=hackathon_2022', 'root', 'root');
             $sql = "UPDATE compopartie SET enigme_id=enigme_id +1, scoreActuel=scoreActuel + (select point from enigme where id=$id) where equipe_id=" . $idEquipe . ";";
             echo $sql;
 
