@@ -49,5 +49,5 @@ app.post('/send_notification', function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log('Local Server : brandonrecette.re');
+  console.log('Local Server : 172.20.10.7');
 });
