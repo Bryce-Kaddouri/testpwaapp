@@ -13,6 +13,27 @@
     <script src="../node_modules/sweetalert2/dist/sweetalert2.js"></script>
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.css">
 
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <!-- <meta name="theme-color" content="#29434d" /> -->
+    <meta name="msapplication-TileColor" content="#130858" />
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="La Marjoline" />
+    <meta name="application-name" content="La Marjoline" />
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="./manifest.json" />
+    <style>
+        @media screen and (display-mode: standalone) {
+            header {
+                height: 0 !important;
+            }
+        }
+    </style>
+
 
     <!-- <link rel="stylesheet" href="styles/boutton.scss"> -->
     <!-- cdn jquery-->
