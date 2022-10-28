@@ -1,7 +1,7 @@
 {
-	"name": "La Marjoline Site Web",
-	"short_name": "LM Site Web",
-	"description": "Application pour la marjoline  ",
+	"name": "HACKATHON_2022 WPA",
+	"short_name": "HACKATHON_2022",
+	"description": "Application web pour le hackathon 2022",
 	"start_url": "index.html?utm=homescreen",
 	"display": "standalone",
 	"orientation": "portrait-primary",
